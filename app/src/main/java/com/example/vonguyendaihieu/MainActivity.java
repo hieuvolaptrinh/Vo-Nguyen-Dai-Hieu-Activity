@@ -12,26 +12,26 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button login;
-    TextView username, password;
+    Button login_2217;
+    TextView username_2217, password_2217;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_2217), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
-        login = findViewById(R.id.btnLogin);
-        login.setOnClickListener(v -> {
+        username_2217 = findViewById(R.id.username_2217);
+        password_2217 = findViewById(R.id.password_2217);
+        login_2217 = findViewById(R.id.btnLogin_2217);
+        login_2217.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-            intent.putExtra("username", username.getText().toString());
-            intent.putExtra("password", password.getText().toString());
+            intent.putExtra("username", username_2217.getText().toString());
+            intent.putExtra("password", password_2217.getText().toString());
 
             startActivity(intent);
         });

@@ -2,14 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/main_2217"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
     <!-- Header Background -->
     <View
-        android:id="@+id/view"
+        android:id="@+id/view_2217"
         android:layout_width="0dp"
         android:layout_height="280dp"
         android:background="#0043FF"
@@ -19,7 +19,7 @@
 
     <!-- Title Profile -->
     <TextView
-        android:id="@+id/txtName6"
+        android:id="@+id/txtName6_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -33,7 +33,7 @@
 
     <!-- Back Button -->
     <TextView
-        android:id="@+id/txtName7"
+        android:id="@+id/txtName7_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -46,7 +46,7 @@
 
     <!-- Settings Button -->
     <ImageButton
-        android:id="@+id/btnSetting"
+        android:id="@+id/btnSetting_2217"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -60,7 +60,7 @@
 
     <!-- Profile Image -->
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView2_2217"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="70dp"
@@ -75,7 +75,7 @@
 
     <!-- User Name -->
     <TextView
-        android:id="@+id/txtName"
+        android:id="@+id/txtName_2217"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -85,25 +85,25 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintStart_toEndOf="@+id/imageView2_2217"
+        app:layout_constraintTop_toTopOf="@+id/imageView2_2217" />
 
     <!-- Username Display -->
     <TextView
-        android:id="@+id/txtUsername"
+        android:id="@+id/txtUsername_2217"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@username"
         android:textColor="#E0E0E0"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtName"
-        app:layout_constraintStart_toStartOf="@+id/txtName"
-        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+        app:layout_constraintEnd_toEndOf="@+id/txtName_2217"
+        app:layout_constraintStart_toStartOf="@+id/txtName_2217"
+        app:layout_constraintTop_toBottomOf="@+id/txtName_2217" />
 
     <!-- Friends Count Label -->
     <TextView
-        android:id="@+id/txtName2"
+        android:id="@+id/txtName2_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -112,11 +112,11 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2_2217" />
 
     <!-- Friends Count -->
     <TextView
-        android:id="@+id/txtName4"
+        android:id="@+id/txtName4_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -124,12 +124,12 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/txtName2"
-        app:layout_constraintTop_toBottomOf="@+id/txtName2" />
+        app:layout_constraintStart_toStartOf="@+id/txtName2_2217"
+        app:layout_constraintTop_toBottomOf="@+id/txtName2_2217" />
 
     <!-- Follows Count Label -->
     <TextView
-        android:id="@+id/txtName3"
+        android:id="@+id/txtName3_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Follows"
@@ -137,23 +137,23 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtName2" />
+        app:layout_constraintTop_toTopOf="@+id/txtName2_2217" />
 
     <!-- Follows Count -->
     <TextView
-        android:id="@+id/txtName5"
+        android:id="@+id/txtName5_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5000000"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/txtName3"
-        app:layout_constraintTop_toTopOf="@+id/txtName4" />
+        app:layout_constraintStart_toStartOf="@+id/txtName3_2217"
+        app:layout_constraintTop_toTopOf="@+id/txtName4_2217" />
 
     <!-- Posts Count Label -->
     <TextView
-        android:id="@+id/txtPostsLabel"
+        android:id="@+id/txtPostsLabel_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
@@ -161,23 +161,23 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtName2" />
+        app:layout_constraintTop_toTopOf="@+id/txtName2_2217" />
 
     <!-- Posts Count -->
     <TextView
-        android:id="@+id/txtPostsCount"
+        android:id="@+id/txtPostsCount_2217"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="250"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/txtPostsLabel"
-        app:layout_constraintTop_toTopOf="@+id/txtName4" />
+        app:layout_constraintStart_toStartOf="@+id/txtPostsLabel_2217"
+        app:layout_constraintTop_toTopOf="@+id/txtName4_2217" />
 
     <!-- Detail Information Card -->
     <LinearLayout
-        android:id="@+id/layoutDetailInfo"
+        android:id="@+id/layoutDetailInfo_2217"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -190,7 +190,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view">
+        app:layout_constraintTop_toBottomOf="@+id/view_2217">
 
         <TextView
             android:layout_width="wrap_content"
@@ -200,7 +200,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtEmail_2217"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -217,7 +217,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/txtPhone"
+            android:id="@+id/txtPhone_2217"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -234,7 +234,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/txtAddress"
+            android:id="@+id/txtAddress_2217"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -251,7 +251,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/txtBirthday"
+            android:id="@+id/txtBirthday_2217"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -261,7 +261,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnShowInfo"
+        android:id="@+id/btnShowInfo_2217"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -273,6 +273,6 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view_2217" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

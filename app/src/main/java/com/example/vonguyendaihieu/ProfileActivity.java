@@ -16,28 +16,28 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ProfileActivity extends AppCompatActivity {
     // Khai báo các View
-    TextView txtName, txtUsername;
-    Button btnShowInfo;
-    ImageButton btnSetting;
-    LinearLayout layoutDetailInfo;
-    private boolean isInfoVisible = false;
+    TextView txtName_2217, txtUsername_2217;
+    Button btnShowInfo_2217;
+    ImageButton btnSetting_2217;
+    LinearLayout layoutDetailInfo_2217;
+    private boolean isInfoVisible_2217 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_2217), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        txtName = findViewById(R.id.txtName);
-        txtUsername = findViewById(R.id.txtUsername);
-        btnShowInfo = findViewById(R.id.btnShowInfo);
-        btnSetting = findViewById(R.id.btnSetting);
-        layoutDetailInfo = findViewById(R.id.layoutDetailInfo);
+        txtName_2217 = findViewById(R.id.txtName_2217);
+        txtUsername_2217 = findViewById(R.id.txtUsername_2217);
+        btnShowInfo_2217 = findViewById(R.id.btnShowInfo_2217);
+        btnSetting_2217 = findViewById(R.id.btnSetting_2217);
+        layoutDetailInfo_2217 = findViewById(R.id.layoutDetailInfo_2217);
 
 
         String name = getIntent().getStringExtra("username");
@@ -45,27 +45,27 @@ public class ProfileActivity extends AppCompatActivity {
 
 
         if (name != null && !name.isEmpty()) {
-            txtName.setText(name);
+            txtName_2217.setText(name);
             // Tạo username từ name (chuyển thành chữ thường, bỏ khoảng trắng)
-            txtUsername.setText("@" + name.toLowerCase().replace(" ", ""));
+            txtUsername_2217.setText("@" + name.toLowerCase().replace(" ", ""));
         }
 
-        btnShowInfo.setOnClickListener(v -> {
-            if (isInfoVisible) {
+        btnShowInfo_2217.setOnClickListener(v -> {
+            if (isInfoVisible_2217) {
                 // Nếu đang hiển thị -> Ẩn đi
-                layoutDetailInfo.setVisibility(View.GONE);
-                btnShowInfo.setText("Xem All Thông Tin");
-                isInfoVisible = false;
+                layoutDetailInfo_2217.setVisibility(View.GONE);
+                btnShowInfo_2217.setText("Xem All Thông Tin");
+                isInfoVisible_2217 = false;
             } else {
 
-                layoutDetailInfo.setVisibility(View.VISIBLE);
-                btnShowInfo.setText("Ẩn Thông Tin");
-                isInfoVisible = true;
+                layoutDetailInfo_2217.setVisibility(View.VISIBLE);
+                btnShowInfo_2217.setText("Ẩn Thông Tin");
+                isInfoVisible_2217 = true;
             }
         });
 
 
-        btnSetting.setOnClickListener(v -> {
+        btnSetting_2217.setOnClickListener(v -> {
             // Tạo Intent để quay về MainActivity
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
 
